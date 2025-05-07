@@ -1,0 +1,65 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features Cards Section
+--------------------------------------------------------------*/
+.features-cards {
+  --default-color: #555;
+  --heading-color: #333;
+
+  .feature-box {
+    height: 100%;
+    padding: 40px 30px;
+    border-radius: 10px;
+
+    i {
+      font-size: 44px;
+      display: inline-block;
+      line-height: 0;
+      color: var(--accent-color);
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    &.orange {
+      background-color: #fff3e2;
+
+      i {
+        color: #edb86e;
+      }
+    }
+
+    &.blue {
+      background-color: #deedfd;
+
+      i {
+        color: #20a5f8;
+      }
+    }
+
+    &.green {
+      background-color: #d5f1e4;
+
+      i {
+        color: #48c88a;
+      }
+    }
+
+    &.red {
+      background-color: #fdeded;
+
+      i {
+        color: #f28484;
+      }
+    }
+  }
+}

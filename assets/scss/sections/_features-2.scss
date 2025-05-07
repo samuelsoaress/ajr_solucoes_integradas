@@ -1,0 +1,64 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Features 2 Section
+--------------------------------------------------------------*/
+.features-2 {
+  .feature-item {
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: color-mix(in srgb, var(--accent-color), transparent 92%);
+
+      i {
+        font-size: 24px;
+        color: var(--accent-color);
+      }
+    }
+
+    .feature-content {
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: color-mix(in srgb, var(--default-color), transparent 25%);
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .phone-mockup {
+    position: relative;
+    padding: 30px 0;
+
+    img {
+      max-width: 300px;
+      height: auto;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .feature-item {
+      text-align: center !important;
+      margin-bottom: 2rem;
+
+      .d-flex {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center !important;
+      }
+    }
+
+    .phone-mockup {
+      margin: 3rem 0;
+    }
+  }
+}
