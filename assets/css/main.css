@@ -182,7 +182,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #165a8c;
   font-size: 14px;
   padding: 8px 20px;
   margin: 0 0 0 30px;
@@ -738,7 +738,7 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -784,7 +784,7 @@ section,
 }
 
 .hero .btn-primary {
-  background-color: var(--accent-color);
+  background-color: #165a8c;
   border-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.75rem 2.5rem;
