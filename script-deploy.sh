@@ -20,6 +20,7 @@ mv docker-compose-prod.yaml docker-compose.yaml
 
 container_ids=$(docker ps -q)
 
+
 if [ -z "$container_ids" ]; then
   echo "Nao ha containers em execucao"
 else
