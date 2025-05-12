@@ -1,0 +1,52 @@
+name: Deploy AJR
+
+on:
+  push:
+    branches: ["production"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Configura Docker Compose
+      run: |
+        curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        docker-compose --version
+
+    - name: Roda Docker Compose
+      run: docker-compose up -d
+
+    - name: Deploy para EC2
+      env: 
+        PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY }}
+        USER: ubuntu
+        HOST: 15.229.243.32
+      run: |
+        echo "$PRIVATE_KEY" > deploy_key.pem
+        chmod 600 deploy_key.pem
+
+        echo "Iniciando docker save..."
+        docker save ajr-solucoes | gzip > ajr-solucoes.tar.gz
+        echo "Docker save concluído."
+
+        echo "Transferindo arquivo para o servidor..."
+        scp -o StrictHostKeyChecking=no -i deploy_key.pem ajr-solucoes.tar.gz $USER@$HOST:/home/ubuntu/
+        echo "Transferência concluída."
+
+        scp -o StrictHostKeyChecking=no -i deploy_key.pem docker-compose-prod.yaml $USER@$HOST:/home/ubuntu/
+
+        scp -o StrictHostKeyChecking=no -i deploy_key.pem script-deploy.sh $USER@$HOST:/home/ubuntu/
+
+        echo "Executando script de deploy no servidor..."
+        ssh -o StrictHostKeyChecking=no -i deploy_key.pem $USER@$HOST "echo '${{ secrets.ENV_FILE }}' > /home/ubuntu/.env && chmod 600 /home/ubuntu/.env"
+        ssh -i deploy_key.pem $USER@$HOST "chmod +x script-deploy.sh && ./script-deploy.sh"

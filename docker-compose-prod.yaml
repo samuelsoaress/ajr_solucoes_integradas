@@ -1,0 +1,17 @@
+services:
+  web:
+    restart: unless-stopped
+    image: ajr-solucoes
+    ports:
+      - "8080:8080"
+    env_file:
+      - /home/ubuntu/.env
+    networks:
+      - vollmed
+    environment:
+      - FLASK_ENV=production
+    command: gunicorn -b 0.0.0.0:8080 app:app
+
+networks:
+  vollmed:
+    driver: bridge
