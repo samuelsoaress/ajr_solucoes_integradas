@@ -2,11 +2,11 @@
 
 chmod 600 /home/ubuntu/.env
 
-if [ -f techblood-agency.tar ]; then
-  rm techblood-agency.tar
+if [ -f ajr-solucoes.tar ]; then
+  rm ajr-solucoes.tar
 fi
 echo "Carregando imagem no Docker..."
-gzip -d techblood-agency.tar.gz
+gzip -d ajr-solucoes.tar.gz
 
 if [ $? -ne 0 ]; then
   echo "Erro ao descompactar o arquivo ajr-solucoes.tar.gz"
