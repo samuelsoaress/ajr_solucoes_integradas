@@ -65,7 +65,7 @@ def submit_consultoria():
     return  redirect(url_for('index'))
 
 @app.route('/servicos')
-def social_media():
+def servicos():
     return  render_template('service-details.html')
         
 if __name__ == '__main__':
