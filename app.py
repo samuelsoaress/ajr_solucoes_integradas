@@ -64,9 +64,9 @@ def submit_consultoria():
     
     return  redirect(url_for('index'))
 
-@app.route('/social_media')
+@app.route('/servicos')
 def social_media():
-    return  render_template('social_media.html')
+    return  render_template('service-details.html')
         
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
