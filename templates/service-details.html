@@ -170,6 +170,26 @@
       });
     });
 
+    document.addEventListener('DOMContentLoaded', () => {
+    // Obtenha o hash da URL (ex: #service1)
+    const hash = window.location.hash;
+
+    if (hash) {
+      // Remova a classe 'active' de todos os itens
+      document.querySelectorAll('.service-item').forEach(item => item.classList.remove('active'));
+      document.querySelectorAll('.service-content').forEach(content => content.classList.remove('active'));
+
+      // Ative o item e o conteúdo correspondente
+      const activeItem = document.querySelector(`.service-item[data-service="${hash.substring(1)}"]`);
+      const activeContent = document.querySelector(hash);
+
+      if (activeItem && activeContent) {
+        activeItem.classList.add('active');
+        activeContent.classList.add('active');
+      }
+    }
+  });
+
   </script>
 
 </main>

@@ -33,7 +33,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="{{ url_for('index') }}" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{{ url_for('static', filename='assets/img/logo.jpg') }}" alt="">
         <!-- <h1 class="sitename">AJR</h1> -->
@@ -41,11 +41,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#features">Recursos</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#pricing">Preços</a></li>
+          <li><a href="{{ url_for('index') }}#hero" class="active">Home</a></li>
+          <li><a href="{{ url_for('index') }}#about">Sobre</a></li>
+          <li><a href="{{ url_for('index') }}#features">Recursos</a></li>
+          <li><a href="{{ url_for('index') }}#services">Serviços</a></li>
+          <li><a href="{{ url_for('index') }}#pricing">Preços</a></li>
           
           <li><a href="#contact">Contato</a></li>
         </ul>
