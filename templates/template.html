@@ -112,7 +112,28 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<!-- Botão Flutuante WhatsApp -->
+<a href="https://wa.me/5511912232117?text=Olá,%20gostaria%20de%20mais%20informações!" 
+   class="btn btn-success btn-lg rounded-circle shadow d-flex align-items-center justify-content-center whatsapp-float" 
+   target="_blank" aria-label="Fale conosco no WhatsApp">
+  <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
+</a>
 
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 86px;
+    right: 10px;
+    z-index: 1050;
+    width: 58px;
+    height: 60px;
+    transition: box-shadow 0.2s;
+  }
+  .whatsapp-float:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    text-decoration: none;
+  }
+</style>
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>

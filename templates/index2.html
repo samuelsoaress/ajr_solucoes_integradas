@@ -293,6 +293,7 @@
 
     </section><!-- /Features Section -->
 
+
     <!-- Features Cards Section -->
     <section id="features-cards" class="features-cards section">
 
@@ -491,145 +492,6 @@
 
     </section><!-- /Call To Action Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-1.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-2.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-3.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-4.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-5.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-6.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-7.png') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ url_for('static', filename='assets/img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testemunhas</h2>
-        <p>Veja o que nossos clientes estão dizendo sobre nós e como nossas soluções transformaram seus negócios.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-5">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="testimonial-item">
-              <img src="{{ url_for('static', filename='assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="testimonial-item">
-              <img src="{{ url_for('static', filename='assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="testimonial-item">
-              <img src="{{ url_for('static', filename='assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="testimonial-item">
-              <img src="{{ url_for('static', filename='assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-              <div class="stars">
-                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-              </div>
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
     <!-- Services Section -->
     <section id="services" class="services section light-background">
 
@@ -706,8 +568,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Preços</h2>
+        <p>Nos consulte para planos personalizados</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -717,32 +579,35 @@
           <!-- Basic Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-card">
-              <h3>Basic Plan</h3>
+              <h3>Telefonia Voip</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">9.9</span>
-                <span class="period">/ month</span>
+                <span class="currency">R$</span>
+                <span class="amount">59.90</span>
+                <span class="period">/ mês</span>
               </div>
-              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
 
-              <h4>Featured Included:</h4>
+              <h4>Recursos Inclusos:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Duis aute irure dolor
+                  WhatsApp API
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Excepteur sint occaecat
+                  URA Telefonia Avançada
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Nemo enim ipsam voluptatem
+                  Gravação de ligações
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Métricas básicas
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary">
-                Buy Now
+              <a href="https://wa.me/5511912232117?text=Olá,%20gostaria%20de%20mais%20informações!" class="btn btn-primary">
+                Comprar Agora
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -751,37 +616,48 @@
           <!-- Standard Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-card popular">
-              <div class="popular-badge">Most Popular</div>
-              <h3>Standard Plan</h3>
+              <div class="popular-badge">Mais Popular</div>
+              <h3>Rastreamento</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">19.9</span>
-                <span class="period">/ month</span>
+                <span class="currency">R$</span>
+                <span class="amount">59.90</span>
+                <span class="period">/ mês</span>
               </div>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
 
-              <h4>Featured Included:</h4>
+              <h4>Recursos Inclusos:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Lorem ipsum dolor sit amet
+                  Visão de satélite com marcadores
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Consectetur adipiscing elit
+                  Visão em tempo real do transito
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Sed do eiusmod tempor
+                  Atribuição de motoristas
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Ut labore et dolore magna
+                  Controle de veículos na mesma tela em tempo real
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Controle de rotas e horários de funcionários
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Alertas de velocidade, deslocamento, motor ligado
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Bloqueio e desbloqueio ilimitados
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-light">
-                Buy Now
+              <a href="https://wa.me/5511912232117?text=Olá,%20gostaria%20de%20mais%20informações!" class="btn btn-light">
+                Comprar Agora
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -790,40 +666,29 @@
           <!-- Premium Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="pricing-card">
-              <h3>Premium Plan</h3>
+              <h3>API de Rastreamento Veicular</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">39.9</span>
-                <span class="period">/ month</span>
+                <span class="currency">R$</span>
+                <span class="amount">0.0</span>
+                <span class="period">/ mês</span>
               </div>
-              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+              <p class="description">Nos consulte para planos personalizados.</p>
 
               <h4>Featured Included:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Temporibus autem quibusdam
+                  Rastreamento em tempo real
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Saepe eveniet ut et voluptates
+                  Consulta de dados através da placa
                 </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Nam libero tempore soluta
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Cumque nihil impedit quo
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i>
-                  Maxime placeat facere possimus
-                </li>
+                
               </ul>
 
-              <a href="#" class="btn btn-primary">
-                Buy Now
+              <a href="https://wa.me/5511912232117?text=Olá,%20gostaria%20de%20mais%20informações!" class="btn btn-primary">
+                Comprar Agora
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
